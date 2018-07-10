@@ -1,4 +1,42 @@
 {
+  "caught_pokemons": [
+    {
+      "name": "ivysaur",
+      "id": 2
+    },
+    {
+      "name": "charmander",
+      "id": 4
+    },
+    {
+      "name": "venusaur",
+      "id": 3
+    },
+    {
+      "name": "wartortle",
+      "id": 8
+    },
+    {
+      "name": "blastoise",
+      "id": 9
+    },
+    {
+      "name": "caterpie",
+      "id": 10
+    },
+    {
+      "name": "pidgeotto",
+      "id": 17
+    },
+    {
+      "name": "nidorino",
+      "id": 33
+    },
+    {
+      "name": "charmeleon",
+      "id": 5
+    }
+  ],
   "pokemons": [
     {
       "name": "bulbasaur",
@@ -10,7 +48,8 @@
     },
     {
       "name": "venusaur",
-      "id": 3
+      "id": 3,
+      "catched": true
     },
     {
       "name": "charmander",

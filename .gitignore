@@ -1,3 +1,7 @@
+/node_modules
+/pokemons
+db.json
+
 # Logs
 logs
 *.log
