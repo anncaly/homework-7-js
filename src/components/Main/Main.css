@@ -1,0 +1,27 @@
+.main {
+	text-align: center;
+	margin: 0 auto;
+}
+#app {
+	font-family: sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+  color: #ff0b0b;
+  font-size: 45px;
+}
+h2 {
+	font-size: 25px;
+  color: #444242;
+  margin-top: -15px;
+}
+.main p {
+	color: #444242;
+	margin-top: 40px;
+}
+.main a {
+	color: #444242;
+  text-decoration: none;
+  font-weight: bold;
+}
+    

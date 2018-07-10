@@ -1,7 +1,6 @@
 import React, {Component, Fragment} from 'react';
-import Post from "../components/Post";
 import CaughtList from "../components/CaughtList";
-import {Link} from 'react-router-dom';
+import Header from "../components/Header";
 
 export default class PostsListContainer extends Component {
 	constructor(props) {
@@ -31,14 +30,15 @@ export default class PostsListContainer extends Component {
 
   render() {
 		const {posts} = this.state;
-		console.log(posts);
+		
 		return(
 			<Fragment>
+				<Header />
 				{posts.map(post => <CaughtList key = {post.id} title = {post.name} img = {post.id}/>)}
-				<button onClick={this.loadPosts}>load more</button>
+				<div className="btn">
+					<button className="load" onClick={this.loadPosts}>load more</button>
+				</div>
 			</Fragment>
 		)
 	}
-
-
 }

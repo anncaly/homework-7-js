@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Post from './components/Post';
-import Counter from './components/Counter';
+import Info from './components/Info';
+import ListItem from './components/ListItem';
 import PostsListContainer from './containers/PostsListContainer.jsx';
-import routes from './routes';
 import PokemonInfo from './containers/PokemonInfo.jsx';
 import PokemonsCaughtList from './containers/PokemonsCaughtList.jsx';
 import Header from "./components/Header";
+import Main from "./components/Main";
 
 import {
   BrowserRouter,
@@ -19,12 +19,11 @@ class App extends Component {
 	render(){
 		return(
 	    <div className="pokemons">
-	    {/* <Post title = "My title" description = "Description" /> */}
 	    <BrowserRouter>
         <Switch>
-          {/*routes.map(item => <Route key={item} {...item} />)*/}
-        	<Route exact path='/' component={PostsListContainer}/>
-      		<Route exact path='/counter/:img/' component={PokemonInfo}/>
+          <Route exact path='/' component={Main}/>
+        	<Route exact path='/all_pokemons' component={PostsListContainer}/>
+      		<Route exact path='/pokemon/:img/' component={PokemonInfo}/>
       		<Route exact path='/caught_pokemons' component={PokemonsCaughtList}/>
         </Switch>
       </BrowserRouter>

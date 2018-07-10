@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import './Header.css'
+import './Header.css';
+import {Link} from 'react-router-dom';
 
 export default class Header extends Component{
   render(){
@@ -8,13 +9,13 @@ export default class Header extends Component{
         <div>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/pokemons">Pockemons</a>
+              <Link to="/all_pokemons">Pockemons</Link>
             </li>
             <li>
-              <a href="/caught_pokemons">Caught Pockemons</a>
+              <Link to="/caught_pokemons">Caught Pockemons</Link>
             </li>
           </ul>
         </div>

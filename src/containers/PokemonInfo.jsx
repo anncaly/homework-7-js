@@ -1,7 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import Post from "../components/Post";
-import PostsList from "../components/PostsList";
-import {Link} from 'react-router-dom';
+import Info from "../components/Info";
 
 export default class PokemonInfo extends Component {
 	constructor(props) {
@@ -15,7 +13,6 @@ export default class PokemonInfo extends Component {
 
 	componentDidMount() {
 		const {id} = this.state;
-
 	  fetch('http://localhost:3004/pokemons/'+id)
 	  	.then(response => response.json())
 			.then(post => {
@@ -27,10 +24,8 @@ export default class PokemonInfo extends Component {
 		const {id, name, post} = this.state;
 		return(
 			<Fragment>
-				<Post key = {post.id} title = {post.name} img = {post.id}/>
+				<Info key = {post.id} title = {post.name} img = {post.id} date = {post.date} />
 			</Fragment>
 		)
 	}
-
-
 }
