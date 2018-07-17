@@ -1,5 +1,6 @@
-/Anna_Morozova_pokedex/node_modules
+/node_modules
 /pokemons
+db.json
 
 # Logs
 logs

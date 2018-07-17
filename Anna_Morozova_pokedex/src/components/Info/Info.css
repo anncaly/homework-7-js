@@ -1,0 +1,63 @@
+.pokemons, .caught {
+	display: flex;
+  flex-wrap: wrap;
+}
+.post, 
+.caught .post { 
+  margin: 5px;
+  text-align: center;
+  border: 1px solid #eee;
+  padding: 20px 0px;
+  flex-basis: 15%;
+  
+}
+.caught .post {
+  min-width: 100%;
+}
+h3 {
+	margin-top: 10px;
+	color: #0d0d3c;
+	text-transform: uppercase;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.pokemon_info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.details {
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+}
+.details_info {
+  padding: 50px 50px;
+}
+.details_info,
+.details_img {
+  border: 1px solid #eee;
+}
+button.load {
+  border: none;
+  padding: 10px 50px;
+  color: #312121;
+  text-transform: uppercase;
+  margin: 15px auto;
+  background-color: #eee;
+}
+button.catch {
+  padding: 5px 30px;
+  background-color: #d9eaff;
+  border: none;
+}
+.details img {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+}
+.btn {
+  width: 100%;
+}
