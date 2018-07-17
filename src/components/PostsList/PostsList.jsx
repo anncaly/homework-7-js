@@ -1,11 +1,26 @@
-import React, {Component} from 'react';
-import ListItem from "../ListItem";
+import React, { Component, Fragment } from 'react';
+import ListItemContainer from "../../containers/ListItemContainer.jsx";
+import Header from "../Header";
 
 export default class PostsList extends Component {
   render() {
-    const {post, title, img, date} = this.props;
-    return (
-    	<ListItem id={img} title={title} post={post} date={date} />
+    const { posts, title, id, load } = this.props;
+    return(
+      <Fragment>
+        <Header />
+      	{posts.map((post) => 
+          <ListItemContainer 
+            key={post.id} 
+            name={post.name} 
+            id={post.id} 
+          />
+        )}
+        <button className="load" onClick={load}>load more</button>
+      </Fragment>
     );
   }
 }
+
+
+
+

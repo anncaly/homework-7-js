@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Main.css';
-import {Link} from 'react-router-dom';
 
 export default class Main extends Component{
-  render(){
+  render() {
     return(
       <div className="main">
         <h1>Pokedex App</h1>
